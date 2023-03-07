@@ -5,10 +5,10 @@
 def ProductEntity(DBItem) -> dict:
     return {
         "SKU": str(DBItem["_ProductSKU"]),
-        "Name": str(DBItem["ProductName"]),
-        "Title": str(DBItem["ProductTitle"]),
-        "Description": str(DBItem["ProductDescription"]),
-        "Price": float(DBItem["ProductPrice"])
+        "Name": (DBItem["ProductName"]),
+        "Title": (DBItem["ProductTitle"]),
+        "Description": (DBItem["ProductDescription"]),
+        "Price": (DBItem["ProductPrice"])
     }
 
 def ListofProductsEntity(DBItemList) -> list:

@@ -6,4 +6,4 @@ class Product(BaseModel):
     ProductSKU: str
     ProductTitle: str
     ProductDescription: str
-    ProductPrice: float
+    ProductPrice: str
